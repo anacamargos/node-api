@@ -14,18 +14,7 @@ requireDir('./src/models');
 const product = mongoose.model('Product');
 
 
-//Primeira rota
-app.get('/', (req, res) => {
-
-    product.create({
-        title: 'React Native',
-        description: 'Build native apps with React Native',
-        url: 'http://github.com/facebook/react-native'
-    });
-
-    console.log("Oi");
-
-    res.send("Hello World");
-})
+//Primeira rota coloca api na frente
+app.use('/api', require("./src/routes"));
 
 app.listen(3001);
