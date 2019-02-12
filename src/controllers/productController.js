@@ -11,6 +11,7 @@ module.exports = {
     },
 
     async store (req, res) {
-        //Criação
+        const newProduct = await product.create(req.body);
+        return res.json(newProduct);
     }
 }
