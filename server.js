@@ -11,10 +11,10 @@ mongoose.connect('mongodb://localhost:27017/nodeapi', {useNewUrlParser:true});
 //require('./src/models/product'); foi substituido por:
 requireDir('./src/models');
 
-const product = mongoose.model('Product');
+//const product = mongoose.model('Product');
 
 
-//Primeira rota coloca api na frente
+//Rotas
 app.use('/api', require("./src/routes"));
 
 app.listen(3001);

@@ -1,18 +1,9 @@
 const express = require('express');
-
 const routes = express.Router();
 
-routes.get('/', (req, res) => {
+const productController = require('./controllers/productController');
 
-    product.create({
-        title: 'React Native',
-        description: 'Build native apps with React Native',
-        url: 'http://github.com/facebook/react-native'
-    });
-
-    
-
-    res.send("Hello World");
-})
+routes.get('/products', productController.index);
+routes.post('/products', productController.store);
 
 module.exports = routes;
