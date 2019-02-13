@@ -1,6 +1,6 @@
 # API Rest em NodeJS
 
-Desenvolvimento de um projeto apenas com objetivo de aprendizado. Ele possui arquitetura MVC utilizando [NodeJS](https://nodejs.org/en/) para tratar requisições e respostas em um servidor, assim como acessar um banco de dados. Nesta aplicação foi utilizado o [MongoDB](https://www.mongodb.com/).
+Desenvolvimento de um projeto com arquitetura MVC utilizando [NodeJS](https://nodejs.org/en/) para tratar requisições e respostas em um servidor, assim como acessar um banco de dados. Nesta aplicação foi utilizado o [MongoDB](https://www.mongodb.com/).
 
 Esta aplicação possui o back-end como foco, portanto o front-end não foi desenvolvido. Para testar as requisições e respostas do servidor, foi utilizado o software [Insomnia](https://insomnia.rest/) e para visualizar o banco de dados foi utilizado o software [Robo 3T](https://robomongo.org/)
 
